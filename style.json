@@ -1,0 +1,1913 @@
+{
+  "version": 8,
+  "name": "Maptoolkit",
+  "center": [
+    14.079,
+    47.605
+  ],
+  "zoom": 6,
+  "sprite": [
+    {
+      "id": "sdf",
+      "url": "https://icons.maptoolkit.org/sprite"
+    },
+    {
+      "id": "nature",
+      "url": "https://icons.maptoolkit.org/nature~hsl_80_45_60"
+    },
+    {
+      "id": "water",
+      "url": "https://icons.maptoolkit.org/water~hsl_191_65_80"
+    }
+  ],
+  "glyphs": "https://fonts.maptoolkit.org/{fontstack}/{range}.pbf",
+  "projection": {
+    "type": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      5,
+      "globe",
+      7,
+      "mercator"
+    ]
+  },
+  "light": {
+    "color": "hsl(50, 12%, 99%)",
+    "anchor": "viewport",
+    "intensity": 0.45,
+    "position": [
+      1.15,
+      210,
+      28
+    ]
+  },
+  "terrain": {
+    "source": "rgb-tiles",
+    "exaggeration": 1
+  },
+  "sky": {
+    "sky-color": "hsl(208, 58%, 56%)",
+    "sky-horizon-blend": 0.5,
+    "horizon-color": "hsl(206, 45%, 92%)",
+    "horizon-fog-blend": 0.5,
+    "fog-color": "hsl(210, 15%, 96%)",
+    "fog-ground-blend": 0.5,
+    "atmosphere-blend": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      0,
+      1,
+      12,
+      0
+    ]
+  },
+  "metadata": {
+    "copyright": "Based on Maptoolkit Styles. Subject to Proprietary License: Must only be used with tile server Maptoolkit.org.",
+    "license_url": "https://www.maptoolkit.org/tos/",
+    "maptoolkit:legend": {
+      "version": 1,
+      "fonts": {
+        "css": "https://static.maptoolkit.net/webfonts/webfonts.css"
+      },
+      "groups": {
+        "water": {
+          "label": {
+            "de": "Gewässer",
+            "en": "Water"
+          },
+          "order": 20
+        },
+        "nature": {
+          "label": {
+            "de": "Landschaft",
+            "en": "Landscape"
+          },
+          "order": 80
+        }
+      },
+      "entries": {
+        "water:area_ocean": {
+          "label": {
+            "de": "Meer",
+            "en": "Ocean"
+          },
+          "order": 23
+        },
+        "nature:pedestrian": {
+          "label": {
+            "de": "Fußgängerzone",
+            "en": "Pedestrian area"
+          },
+          "order": 19
+        },
+        "water:area_lagoon": {
+          "label": {
+            "de": "Lagune, Hafen",
+            "en": "Lagoon, harbour"
+          },
+          "order": 17
+        },
+        "water:intermittent": {
+          "label": {
+            "de": "Zeitweise Wasserfläche",
+            "en": "Intermittent water"
+          },
+          "order": 8
+        },
+        "water:waterway": {
+          "label": {
+            "de": "Fluss, Bach",
+            "en": "River, stream"
+          },
+          "order": 6
+        },
+        "water:waterway_intermittent": {
+          "label": {
+            "de": "Zeitweiser Wasserlauf",
+            "en": "Intermittent waterway"
+          },
+          "order": 5
+        },
+        "water:area_inland": {
+          "label": {
+            "de": "Wasserfläche",
+            "en": "Water surface"
+          },
+          "order": 4,
+          "keys": [
+            "water:area_ocean",
+            "water:area_lagoon"
+          ]
+        },
+        "nature:wood": {
+          "label": {
+            "de": "Wald",
+            "en": "Forest"
+          },
+          "order": 18.001
+        },
+        "nature:grass": {
+          "label": {
+            "de": "Wiese",
+            "en": "Grassland"
+          },
+          "order": 18.002
+        },
+        "nature:scrub": {
+          "label": {
+            "de": "Gebüsch",
+            "en": "Scrub"
+          },
+          "order": 18.003
+        },
+        "nature:fell": {
+          "label": {
+            "de": "Almwiese",
+            "en": "Fell"
+          },
+          "order": 18.004
+        },
+        "nature:rock": {
+          "label": {
+            "de": "Fels",
+            "en": "Rock"
+          },
+          "order": 18.005
+        },
+        "nature:farmland": {
+          "label": {
+            "de": "Ackerland",
+            "en": "Farmland"
+          },
+          "order": 18.006
+        },
+        "nature:sand": {
+          "label": {
+            "de": "Sand",
+            "en": "Sand"
+          },
+          "order": 18.007
+        },
+        "nature:wetland": {
+          "label": {
+            "de": "Feuchtgebiet",
+            "en": "Wetland"
+          },
+          "order": 18.008
+        },
+        "nature:ice": {
+          "label": {
+            "de": "Eis",
+            "en": "Ice"
+          },
+          "order": 18.009
+        },
+        "nature:glacier": {
+          "label": {
+            "de": "Gletscher",
+            "en": "Glacier"
+          },
+          "order": 18.01
+        },
+        "nature:tidalflat": {
+          "label": {
+            "de": "Watt",
+            "en": "Tidal flat"
+          },
+          "order": 18.011
+        },
+        "nature:salt_desert": {
+          "label": {
+            "de": "Salzwüste",
+            "en": "Salt flat"
+          },
+          "order": 18.012
+        },
+        "nature:residential": {
+          "label": {
+            "de": "Wohngebiet",
+            "en": "Residential area"
+          },
+          "order": 18.013
+        },
+        "nature:park": {
+          "label": {
+            "de": "Park",
+            "en": "Park"
+          },
+          "order": 18.014
+        },
+        "nature:cemetery": {
+          "label": {
+            "de": "Friedhof",
+            "en": "Cemetery"
+          },
+          "order": 18.015
+        },
+        "nature:parking": {
+          "label": {
+            "de": "Parkplatz",
+            "en": "Parking"
+          },
+          "order": 18.016
+        },
+        "nature:school": {
+          "label": {
+            "de": "Schule",
+            "en": "School"
+          },
+          "order": 18.017
+        },
+        "nature:hospital": {
+          "label": {
+            "de": "Krankenhaus",
+            "en": "Hospital"
+          },
+          "order": 18.018
+        },
+        "nature:pitch": {
+          "label": {
+            "de": "Sportplatz",
+            "en": "Sports pitch"
+          },
+          "order": 18.019
+        },
+        "nature:quarry": {
+          "label": {
+            "de": "Steinbruch",
+            "en": "Quarry"
+          },
+          "order": 18.02
+        },
+        "nature:aeroway": {
+          "label": {
+            "de": "Flugplatz",
+            "en": "Aerodrome"
+          },
+          "order": 18.021
+        },
+        "nature:flowerbed": {
+          "label": {
+            "de": "Blumenbeet",
+            "en": "Flower bed"
+          },
+          "order": 18.022
+        },
+        "nature:military": {
+          "label": {
+            "de": "Militärgebiet",
+            "en": "Military area"
+          },
+          "order": 18.023
+        },
+        "nature:national_park": {
+          "label": {
+            "de": "Nationalpark",
+            "en": "National park"
+          },
+          "order": 18.024
+        },
+        "nature:protected_area": {
+          "label": {
+            "de": "Schutzgebiet",
+            "en": "Protected area"
+          },
+          "order": 18.025
+        },
+        "nature:aboriginal_lands": {
+          "label": {
+            "de": "Indigenes Gebiet",
+            "en": "Indigenous land"
+          },
+          "order": 18.026
+        },
+        "water:river": {
+          "order": 27,
+          "keys": [
+            "water:stream",
+            "water:canal"
+          ]
+        },
+        "water:water": {
+          "order": 28,
+          "keys": [
+            "water:bay",
+            "water:sea",
+            "water:ocean",
+            "water:strait",
+            "water:reef"
+          ]
+        }
+      }
+    }
+  },
+  "sources": {
+    "mtk": {
+      "type": "vector",
+      "url": "https://tiles.maptoolkit.org/mtk.json",
+      "maxzoom": 15
+    },
+    "bathymetry": {
+      "url": "https://tiles.maptoolkit.org/raster_bathymetry.json",
+      "type": "raster-dem",
+      "minzoom": 0,
+      "maxzoom": 9,
+      "tileSize": 512,
+      "encoding": "terrarium"
+    },
+    "rgb-tiles": {
+      "url": "https://tiles.maptoolkit.org/terrainrgb.json",
+      "type": "raster-dem",
+      "encoding": "terrarium"
+    },
+    "rgb-tiles-blur-min": {
+      "type": "raster-dem",
+      "url": "https://tiles.maptoolkit.org/terrainrgb.json",
+      "maxzoom": 15,
+      "encoding": "terrarium",
+      "tileSize": 2048
+    },
+    "rgb-tiles-blur-med": {
+      "type": "raster-dem",
+      "url": "https://tiles.maptoolkit.org/terrainrgb.json",
+      "maxzoom": 15,
+      "encoding": "terrarium",
+      "tileSize": 4096
+    },
+    "rgb-tiles-blur-max": {
+      "type": "raster-dem",
+      "url": "https://tiles.maptoolkit.org/terrainrgb.json",
+      "maxzoom": 15,
+      "encoding": "terrarium",
+      "tileSize": 8192
+    },
+    "naturalearth": {
+      "type": "raster",
+      "url": "https://tiles.maptoolkit.org/naturalearth.json"
+    },
+    "rocks": {
+      "url": "https://tiles.maptoolkit.org/rocks.json",
+      "type": "raster",
+      "tileSize": 360
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "background-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          "hsla(80, 32%, 75%, 1)",
+          14,
+          "hsla(80, 8%, 75%, 1)"
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "nature_naturalearth",
+      "source": "naturalearth",
+      "type": "raster",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.8,
+          5,
+          0.1
+        ],
+        "raster-saturation": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          2,
+          -0.15,
+          7,
+          0.35
+        ],
+        "raster-brightness-min": 0.1,
+        "raster-brightness-max": 0.9,
+        "raster-hue-rotate": -15
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "water_area_ocean",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "fill",
+      "filter": [
+        "==",
+        [
+          "get",
+          "type"
+        ],
+        "ocean"
+      ],
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsla(191, 65%, 85%, 1)"
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "area_ocean"
+        }
+      }
+    },
+    {
+      "id": "water_bathymetry",
+      "source": "bathymetry",
+      "type": "color-relief",
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "color-relief-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "elevation"
+          ],
+          -12000,
+          "hsla(191, 65%, 40%, 1)",
+          -1000,
+          "hsla(191, 65%, 59%, 1)",
+          -500,
+          "hsla(191, 65%, 61%, 1)",
+          -250,
+          "hsla(191, 65%, 63%, 1)",
+          -100,
+          "hsla(191, 65%, 65%, 1)",
+          -30,
+          "hsla(191, 65%, 71%, 1)",
+          -0.1,
+          "hsla(191, 65%, 85%, 1)",
+          0,
+          "hsla(191, 65%, 85%, 0)"
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "nature_natural_land",
+      "source": "mtk",
+      "source-layer": "natural",
+      "filter": [
+        "==",
+        [
+          "get",
+          "type"
+        ],
+        "land"
+      ],
+      "type": "fill",
+      "minzoom": 4,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          "hsla(80, 32%, 75%, 0)",
+          5,
+          "hsla(80, 32%, 75%, 1)",
+          11,
+          "hsla(80, 32%, 75%, 1)",
+          14,
+          "hsla(80, 8%, 75%, 1)"
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "nature_landuse",
+      "source": "mtk",
+      "source-layer": "landuse",
+      "type": "fill",
+      "minzoom": 5,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "quarry",
+            "hsla(23.75, 0%, 73%, 0)",
+            [
+              "park",
+              "cemetery"
+            ],
+            "hsla(80, 40%, 73%, 0)",
+            "parking",
+            "hsla(46.25, 55%, 70%, 0)",
+            [
+              "school",
+              "hospital"
+            ],
+            "hsla(35, 60%, 77%, 0)",
+            "pitch",
+            "hsla(136.25, 55%, 70%, 0)",
+            "flowerbed",
+            "hsla(46.25, 75%, 77%, 0)",
+            "hsla(35, 0%, 72%, 0)"
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "quarry",
+            "hsla(23.75, 0%, 73%, 1)",
+            [
+              "park",
+              "cemetery"
+            ],
+            "hsla(80, 40%, 73%, 1)",
+            "parking",
+            "hsla(46.25, 55%, 70%, 1)",
+            [
+              "school",
+              "hospital"
+            ],
+            "hsla(35, 60%, 77%, 1)",
+            "pitch",
+            "hsla(136.25, 55%, 70%, 1)",
+            "flowerbed",
+            "hsla(46.25, 75%, 77%, 1)",
+            "hsla(35, 0%, 72%, 1)"
+          ],
+          14.5,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "quarry",
+            "hsla(23.75, 0%, 70%, 1)",
+            [
+              "park",
+              "cemetery"
+            ],
+            "hsla(80, 40%, 70%, 1)",
+            "parking",
+            "hsla(46.25, 55%, 67%, 1)",
+            [
+              "school",
+              "hospital"
+            ],
+            "hsla(35, 60%, 74%, 1)",
+            "pitch",
+            "hsla(136.25, 55%, 67%, 1)",
+            "flowerbed",
+            "hsla(46.25, 75%, 74%, 1)",
+            "hsla(35, 0%, 77%, 1)"
+          ]
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "nature",
+          "keyProperty": "type"
+        }
+      }
+    },
+    {
+      "id": "nature_pedestrian",
+      "source": "mtk",
+      "source-layer": "road",
+      "type": "fill",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "in",
+          [
+            "get",
+            "subtype"
+          ],
+          [
+            "literal",
+            [
+              "pedestrian",
+              "platform"
+            ]
+          ]
+        ],
+        [
+          "!",
+          [
+            "has",
+            "indoor"
+          ]
+        ]
+      ],
+      "minzoom": 11,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          "hsla(35, 60%, 74%, 1)",
+          14.5,
+          "hsla(35, 60%, 72%, 1)"
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "nature",
+          "key": "pedestrian"
+        }
+      }
+    },
+    {
+      "id": "nature_natural",
+      "source": "mtk",
+      "source-layer": "natural",
+      "type": "fill",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "!",
+          [
+            "in",
+            [
+              "get",
+              "type"
+            ],
+            [
+              "literal",
+              [
+                "land",
+                "protected_area",
+                "national_park",
+                "aboriginal_lands",
+                "military"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "minzoom": 4,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "wood",
+            "hsla(91.25, 35%, 65%, 0)",
+            "farmland",
+            "hsla(57.5, 55%, 70%, 0)",
+            [
+              "wetland",
+              "tidalflat"
+            ],
+            "hsla(102.25, 40%, 70%, 0)",
+            "rock",
+            "hsla(68.75, 0%, 73%, 0)",
+            "sand",
+            "hsla(35, 60%, 70%, 0)",
+            "scrub",
+            "hsla(85.63, 35%, 65%, 0)",
+            "fell",
+            "hsla(68.75, 45%, 67%, 0)",
+            "ice",
+            "hsla(181.25, 65%, 78%, 0)",
+            "salt_desert",
+            "hsla(181.25, 50%, 78%, 0)",
+            "hsla(80, 45%, 70%, 0)"
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "wood",
+            "hsla(91.25, 35%, 65%, 1)",
+            "farmland",
+            "hsla(57.5, 55%, 70%, 1)",
+            [
+              "wetland",
+              "tidalflat"
+            ],
+            "hsla(102.25, 40%, 70%, 1)",
+            "rock",
+            "hsla(68.75, 0%, 73%, 1)",
+            "sand",
+            "hsla(35, 60%, 70%, 1)",
+            "scrub",
+            "hsla(85.63, 35%, 65%, 1)",
+            "fell",
+            "hsla(68.75, 45%, 67%, 1)",
+            "ice",
+            "hsla(181.25, 65%, 78%, 1)",
+            "salt_desert",
+            "hsla(181.25, 50%, 78%, 1)",
+            "hsla(80, 45%, 70%, 1)"
+          ],
+          12,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "wood",
+            "hsla(91.25, 35%, 62%, 1)",
+            "farmland",
+            "hsla(57.5, 55%, 67%, 1)",
+            [
+              "wetland",
+              "tidalflat"
+            ],
+            "hsla(102.25, 40%, 67%, 1)",
+            "rock",
+            "hsla(68.75, 0%, 70%, 1)",
+            "sand",
+            "hsla(35, 60%, 67%, 1)",
+            "scrub",
+            "hsla(85.63, 35%, 62%, 1)",
+            "fell",
+            "hsla(68.75, 45%, 64%, 1)",
+            "ice",
+            "hsla(181.25, 65%, 75%, 1)",
+            "salt_desert",
+            "hsla(181.25, 50%, 75%, 1)",
+            "hsla(80, 45%, 67%, 1)"
+          ]
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "nature",
+          "keyProperty": "type"
+        }
+      }
+    },
+    {
+      "id": "water_area_lagoon",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "fill",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "in",
+          [
+            "get",
+            "type"
+          ],
+          [
+            "literal",
+            [
+              "harbour",
+              "lagoon"
+            ]
+          ]
+        ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsla(191, 65%, 80%, 0.7)"
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "area_lagoon"
+        }
+      }
+    },
+    {
+      "id": "nature_natural_texture",
+      "source": "mtk",
+      "source-layer": "natural",
+      "type": "fill",
+      "filter": [
+        "in",
+        [
+          "get",
+          "type"
+        ],
+        [
+          "literal",
+          [
+            "wood",
+            "grass",
+            "scrub",
+            "fell",
+            "rock",
+            "farmland",
+            "sand",
+            "wetland",
+            "ice"
+          ]
+        ]
+      ],
+      "minzoom": 12,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "concat",
+            "nature:",
+            [
+              "get",
+              "type"
+            ],
+            "_small"
+          ],
+          15,
+          [
+            "concat",
+            "nature:",
+            [
+              "get",
+              "type"
+            ],
+            "_large"
+          ]
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.4,
+          14.99,
+          0.8,
+          15,
+          0.5,
+          22,
+          0.7
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_natural"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_landuse_quarry_texture",
+      "source": "mtk",
+      "source-layer": "landuse",
+      "type": "fill",
+      "filter": [
+        "==",
+        [
+          "get",
+          "type"
+        ],
+        "quarry"
+      ],
+      "minzoom": 12,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": [
+          "step",
+          [
+            "zoom"
+          ],
+          "nature:rock_small",
+          15,
+          "nature:rock_large"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.4,
+          14.99,
+          0.8,
+          15,
+          0.5,
+          22,
+          0.7
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_landuse"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_landuse_flowerbed_texture",
+      "type": "fill",
+      "paint": {
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          0.2,
+          22,
+          0.7
+        ],
+        "fill-pattern": "nature:flowerbed"
+      },
+      "filter": [
+        "==",
+        [
+          "get",
+          "type"
+        ],
+        "flowerbed"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "source": "mtk",
+      "maxzoom": 22,
+      "minzoom": 15,
+      "source-layer": "landuse",
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_landuse"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_natural_tree_row_texture",
+      "source": "mtk",
+      "source-layer": "natural",
+      "type": "line",
+      "filter": [
+        "in",
+        [
+          "get",
+          "type"
+        ],
+        [
+          "literal",
+          [
+            "wood",
+            "tree_row",
+            "hedge"
+          ]
+        ]
+      ],
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-pattern": [
+          "case",
+          [
+            "==",
+            [
+              "get",
+              "type"
+            ],
+            "hedge"
+          ],
+          "nature:hedge",
+          "nature:tree_row"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "type"
+              ],
+              "tree_row"
+            ],
+            20,
+            10
+          ],
+          19,
+          [
+            "case",
+            [
+              "==",
+              [
+                "get",
+                "type"
+              ],
+              "tree_row"
+            ],
+            128,
+            64
+          ]
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          0.2,
+          16.5,
+          0.7,
+          22,
+          0.8
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_natural"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_rocks",
+      "type": "raster",
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.2,
+          11,
+          0.3,
+          12,
+          0.4,
+          13,
+          0.5,
+          14.5,
+          0.3,
+          15.5,
+          0
+        ],
+        "raster-hue-rotate": 0,
+        "raster-saturation": 0,
+        "raster-brightness-max": 1,
+        "raster-brightness-min": 0.2
+      },
+      "layout": {
+        "visibility": "visible"
+      },
+      "source": "rocks",
+      "maxzoom": 16,
+      "minzoom": 10,
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "relief_hillshade_ao_min",
+      "type": "hillshade",
+      "paint": {
+        "hillshade-exaggeration": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.2,
+          16,
+          0.3
+        ],
+        "hillshade-shadow-color": "hsla(-9, 0%, 0%, 0.3)",
+        "hillshade-accent-color": "hsla(-9, 0%, 0%, 0)",
+        "hillshade-highlight-color": "hsla(192, 100%, 85%, 0)"
+      },
+      "layout": {
+        "visibility": "visible"
+      },
+      "source": "rgb-tiles-blur-min",
+      "maxzoom": 23,
+      "minzoom": 0,
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "relief_hillshade_ao_med",
+      "type": "hillshade",
+      "paint": {
+        "hillshade-exaggeration": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.2,
+          16,
+          0.3
+        ],
+        "hillshade-shadow-color": "hsla(-9, 0%, 30%, 0.3)",
+        "hillshade-accent-color": "hsla(-9, 0%, 0%, 0)",
+        "hillshade-highlight-color": "hsla(192, 100%, 85%, 0)"
+      },
+      "layout": {
+        "visibility": "visible"
+      },
+      "source": "rgb-tiles-blur-med",
+      "maxzoom": 23,
+      "minzoom": 0,
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "relief_hillshade_ao_max",
+      "type": "hillshade",
+      "paint": {
+        "hillshade-exaggeration": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.2,
+          16,
+          0.3
+        ],
+        "hillshade-shadow-color": "hsla(-9, 0%, 60%, 0.3)",
+        "hillshade-accent-color": "hsla(-9, 0%, 0%, 0)",
+        "hillshade-highlight-color": "hsla(192, 100%, 85%, 0)"
+      },
+      "layout": {
+        "visibility": "visible"
+      },
+      "source": "rgb-tiles-blur-max",
+      "maxzoom": 23,
+      "minzoom": 0,
+      "metadata": {
+        "maptoolkit:legend": {
+          "hidden": true
+        }
+      }
+    },
+    {
+      "id": "water_intermittent",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "fill",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsla(191, 65%, 96%, 1)"
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "intermittent"
+        }
+      }
+    },
+    {
+      "id": "water_intermittent_outline",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "line",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ],
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(202.25, 70%, 75%, 1)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.33,
+          19,
+          1.98
+        ],
+        "line-dasharray": [
+          3,
+          3
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "outline",
+          "group": "water",
+          "attachesTo": [
+            "water_intermittent"
+          ]
+        }
+      }
+    },
+    {
+      "id": "water_waterway",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "line",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "LineString"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "crossing"
+          ],
+          "tunnel"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(202.25, 70%, 75%, 1)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "river",
+            1,
+            [
+              "stream",
+              "canal"
+            ],
+            0.5,
+            0.33
+          ],
+          19,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "river",
+            6,
+            [
+              "stream",
+              "canal"
+            ],
+            3,
+            1.98
+          ]
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "waterway"
+        }
+      }
+    },
+    {
+      "id": "water_waterway_intermittent",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "line",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ],
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "LineString"
+        ]
+      ],
+      "minzoom": 6,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsla(202.25, 70%, 75%, 1)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.2
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "river",
+            1,
+            [
+              "lake",
+              "stream",
+              "canal"
+            ],
+            0.5,
+            0.33
+          ],
+          19,
+          [
+            "match",
+            [
+              "get",
+              "type"
+            ],
+            "river",
+            6,
+            [
+              "lake",
+              "stream",
+              "canal"
+            ],
+            3,
+            1.98
+          ]
+        ],
+        "line-dasharray": [
+          3,
+          3
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "waterway_intermittent"
+        }
+      }
+    },
+    {
+      "id": "water_area_inland",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "fill",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ],
+        [
+          "!",
+          [
+            "in",
+            [
+              "get",
+              "type"
+            ],
+            [
+              "literal",
+              [
+                "ocean",
+                "harbour",
+                "lagoon"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 23,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsla(191, 65%, 80%, 1)"
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "main",
+          "group": "water",
+          "key": "area_inland"
+        }
+      }
+    },
+    {
+      "id": "water_area_texture",
+      "source": "mtk",
+      "source-layer": "water",
+      "type": "fill",
+      "minzoom": 12,
+      "maxzoom": 22,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Polygon"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": [
+          "step",
+          [
+            "zoom"
+          ],
+          "water:water_small",
+          16,
+          "water:water_large"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.4,
+          15.99,
+          0.8,
+          16,
+          0.5,
+          22,
+          0.7
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "water",
+          "attachesTo": [
+            "water_area_ocean",
+            "water_area_lagoon",
+            "water_area_inland"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_natural_tidalflat_texture",
+      "source": "mtk",
+      "source-layer": "natural",
+      "type": "fill",
+      "filter": [
+        "==",
+        [
+          "get",
+          "type"
+        ],
+        "tidalflat"
+      ],
+      "minzoom": 7,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-pattern": [
+          "step",
+          [
+            "zoom"
+          ],
+          "nature:tidalflat_small",
+          15,
+          "nature:tidalflat_large"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.5,
+          14.99,
+          0.8,
+          15,
+          0.5,
+          22,
+          0.7
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_natural"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nature_natural_tree_texture",
+      "source": "mtk",
+      "source-layer": "poi_label",
+      "type": "symbol",
+      "filter": [
+        "in",
+        [
+          "get",
+          "type"
+        ],
+        "tree"
+      ],
+      "minzoom": 15,
+      "maxzoom": 22,
+      "layout": {
+        "visibility": "visible",
+        "icon-image": "nature:tree",
+        "icon-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          0.1,
+          22,
+          1
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true
+      },
+      "paint": {
+        "icon-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          0.2,
+          16.5,
+          0.6,
+          22,
+          0.7
+        ]
+      },
+      "metadata": {
+        "maptoolkit:legend": {
+          "role": "texture",
+          "group": "nature",
+          "attachesTo": [
+            "nature_natural"
+          ]
+        }
+      }
+    }
+  ]
+}
